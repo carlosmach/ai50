@@ -156,13 +156,3 @@ def min_value(board):
         v = min(v, max_value(result(board, action)))
     return v
 
-
-print(player([[EMPTY, EMPTY, EMPTY], [EMPTY, EMPTY, EMPTY],[EMPTY, EMPTY, EMPTY]]))
-print(player([[EMPTY, X, EMPTY], [EMPTY, EMPTY, EMPTY],[EMPTY, EMPTY, EMPTY]]))
-print(player([[EMPTY, X, EMPTY], [EMPTY, O, EMPTY],[EMPTY, EMPTY, EMPTY]]))
-print(player([[X, X, EMPTY], [EMPTY, O, EMPTY],[EMPTY, EMPTY, EMPTY]]))
-print(player([[X, X, O], [EMPTY, O, EMPTY],[EMPTY, EMPTY, EMPTY]]))
-print(player([[X, X, O], [X, O, EMPTY],[EMPTY, EMPTY, EMPTY]]))
-print(player([[X, X, O], [X, O, EMPTY],[O, EMPTY, EMPTY]]))
-print("Testing actions...")
-print(actions([[X, X, O], [X, O, EMPTY],[O, EMPTY, EMPTY]]))
